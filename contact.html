@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astroship</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="px-6 lg:px-30 pt-6">
+        <nav class="flex justify-between items-center relative">
+
+            <!-- Logo -->
+            <div class="logo">
+                <span class="text-black font-bold">
+                    Astro<span class="text-gray-400">ship</span>
+                </span>
+            </div>
+
+            <!-- Desktop navigation -->
+            <div class="nav-links hidden lg:block">
+                <ul class="flex gap-8">
+                    <li class="relative group">
+                        <a href="index.html" class="flex items-center gap-2">
+                            Features
+                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </a>
+
+                        <ul
+                            class="hidden group-hover:block group-focus-within:block absolute left-0 top-full mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-50">
+                            <li><a href="#feature-1" class="block px-4 py-2 hover:bg-gray-100">Action</a></li>
+                            <li><a href="#feature-2" class="block px-4 py-2 hover:bg-gray-100">Another action</a></li>
+                            <li><a href="#feature-3" class="block px-4 py-2 hover:bg-gray-100"> Dropdown Submenu </a></li>
+                            <li><a href="#feature-3" class="block px-4 py-2 hover:bg-gray-100">  404 Page  </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Desktop buttons -->
+            <div class="nav-bts hidden lg:flex gap-4">
+                <button>Log in</button>
+                <button class="bg-zinc-950 text-white px-4 py-2 rounded-sm">
+                    Sign Up
+                </button>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="menu-btn" class="lg:hidden text-2xl" aria-label="Toggle menu" aria-expanded="false"
+                aria-controls="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Mobile dropdown -->
+            <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg rounded-md p-6 z-50">
+
+                <ul class="flex flex-col gap-5">
+                    <li><a href="index.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="flex flex-col gap-3 mt-5">
+                    <button class="border border-gray-300 py-2 rounded-sm">
+                        Log in
+                    </button>
+                    <button class="bg-zinc-950 text-white py-2 rounded-sm">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+
+        <section class=" min-h-screen py-10">
+            <div class="title  text-center mb-8">
+                <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">Contact</h1>
+                <p class="text-lg mt-4 text-slate-600">We are a here to help.</p>
+            </div>
+            <div class="Contact flex  flex-col lg:flex-row justify-center gap-5 items-center lg:items-start">
+                <div class="contact-desc">
+                    <h2 class="font-medium text-2xl text-gray-800">Contact Astroship</h2>
+                    <p class="text-lg leading-relaxed text-slate-500 mt-3">Have something to say? We are here to help. Fill up <br> the form or send email or call phone.</p>
+                    <ul class="flex flex-col gap-2 mt-2 text-gray-600">
+                        <li><i class="fa-solid fa-location-dot text-black"></i> 1734 Sanfransico, CA 93063</li>
+                        <li><i class="fa-solid fa-envelope"></i> hello@astroshipstarter.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +1 (987) 4587 899</li>
+                    </ul>
+                </div>
+                <div class="contact-form flex flex-col gap-5 w-100 ">
+                    <input type="text" placeholder="Full Name"
+                        class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-hidden focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100">
+                    <input type="email" placeholder="Emial Address"
+                        class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-hidden focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100">
+                    <textarea name="" id="" placeholder="Your Message"
+                        class="w-full h-40 py-3 px-4 border-2 placeholder:text-gray-800 rounded-md outline-hidden focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"></textarea>
+                    <button class="bg-black text-white py-4 rounded-lg hover:bg-gray-800">Send Message</button>
+
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+
+
+    </main>
+    <footer class="my-10 ">
+        <div class="footer-content text-center">
+            <p class="text-center text-sm text-slate-500">Copyright © 2026 Astroship. All rights reserved.</p>
+            <p class="text-center text-xs text-slate-500 mt-1">Made by <a
+                    href="https://web3templates.com/">web3templates</a> • Distributed by <a
+                    href="https://themewagon.com/">ThemeWagon</a></p>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const icon = menuBtn.querySelector("i");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+
+            const isOpen = !mobileMenu.classList.contains("hidden");
+
+            menuBtn.setAttribute("aria-expanded", isOpen);
+            icon.classList.toggle("fa-bars", !isOpen);
+            icon.classList.toggle("fa-xmark", isOpen);
+        });
+
+        mobileMenu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+                menuBtn.setAttribute("aria-expanded", "false");
+                icon.classList.replace("fa-xmark", "fa-bars");
+            });
+        });
+    </script>
+</body>
+
+</html>

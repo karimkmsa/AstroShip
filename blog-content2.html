@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astroship</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="px-6 lg:px-30 pt-6">
+        <nav class="flex justify-between items-center relative">
+
+            <!-- Logo -->
+            <div class="logo">
+                <span class="text-black font-bold">
+                    Astro<span class="text-gray-400">ship</span>
+                </span>
+            </div>
+
+            <!-- Desktop navigation -->
+            <div class="nav-links hidden lg:block">
+                <ul class="flex gap-8">
+                    <li><a href="index.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Desktop buttons -->
+            <div class="nav-bts hidden lg:flex gap-4">
+                <button>Log in</button>
+                <button class="bg-zinc-950 text-white px-4 py-2 rounded-sm">
+                    Sign Up
+                </button>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="menu-btn" class="lg:hidden text-2xl" aria-label="Toggle menu" aria-expanded="false"
+                aria-controls="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Mobile dropdown -->
+            <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg rounded-md p-6 z-50">
+
+                <ul class="flex flex-col gap-5">
+                    <li><a href="index.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="flex flex-col gap-3 mt-5">
+                    <button class="border border-gray-300 py-2 rounded-sm">
+                        Log in
+                    </button>
+                    <button class="bg-zinc-950 text-white py-2 rounded-sm">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="max-w-3xl mx-auto my-12 text-left px-5 lg:px-1">
+        <div class="mb-6">
+            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Tutorials</span>
+            <h1 class="text-3xl md:text-5xl font-bold  tracking-tighter leading-normal my-3">
+                The Complete Guide to Full Stack Web Development
+
+            </h1>
+
+            <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-slate-400 font-medium">
+                <span>Marcell Ziemann</span>
+                <span>•</span>
+                <span>Wed Nov 09 2022</span>
+                <span>•</span>
+                <span class="text-gray-500 ">#webdev</span>
+                <span class="text-gray-500 ">#tailwindcss</span>
+                <span class="text-gray-500 ">#frontend</span>
+            </div>
+        </div>
+
+
+        <div class="text-slate-600 leading-relaxed md:text-lg flex flex-col gap-6 text-justify">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit euismod rutrum, consequat fringilla ultricies
+                nullam curae mollis semper conubia viverra, orci aenean dapibus pharetra nec tortor tellus cubilia.
+                Ullamcorper mi lectus eu malesuada tempor massa praesent magna mattis posuere, lobortis vulputate ut
+                duis magnis parturient habitant nibh id tristique, quis suspendisse donec nisl penatibus sem non feugiat
+                taciti. Mollis per ridiculus integer cursus semper vestibulum fermentum penatibus cubilia blandit
+                scelerisque, tempus platea leo posuere ac pharetra volutpat aliquet euismod id ullamcorper lobortis,
+                urna est magna mus rhoncus massa curae libero praesent eget. Mattis malesuada vestibulum quis ac nam
+                phasellus suscipit facilisis libero diam posuere, cursus massa vehicula neque imperdiet tincidunt dui
+                egestas lacinia mollis aliquet orci, nisl curabitur dapibus litora dis cum nostra montes ligula
+                praesent. Facilisi aliquam convallis molestie tempor blandit ultricies bibendum parturient cubilia quam,
+                porttitor morbi torquent tempus taciti nec faucibus elementum phasellus, quis inceptos vestibulum
+                gravida augue potenti eget nunc maecenas. Tempor facilisis ligula volutpat habitant consequat inceptos
+                orci per potenti blandit platea, mus sapien eget vel libero vestibulum augue cubilia ut ultrices
+                fringilla lectus, imperdiet pellentesque cum ridiculus convallis sollicitudin nisl interdum semper
+                felis.
+
+            </p>
+
+            <p>Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus
+                maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti augue nulla
+                vivamus senectus odio, quisque curabitur enim consequat class sociis feugiat ullamcorper, felis dis
+                imperdiet cubilia commodo sed massa phasellus. Viverra purus mus nisi condimentum dui vehicula facilisis
+                turpis, habitant nascetur lectus tempor quisque habitasse urna scelerisque, nibh nullam vestibulum
+                luctus aenean mollis metus. Suscipit gravida duis nec aliquet natoque molestie a ridiculus scelerisque
+                cum, justo cursus sapien sodales purus dignissim vel facilisi magnis, inceptos rutrum ut integer auctor
+                commodo sollicitudin fames et. Faucibus ligula nibh sagittis mauris auctor posuere habitant, scelerisque
+                phasellus accumsan egestas gravida viverra nam, sed etiam eleifend proin massa dictumst. Porttitor risus
+                luctus per aenean tellus primis fringilla vitae fames lacinia mauris metus, nec pulvinar quisque commodo
+                sodales ac nibh natoque phasellus semper placerat. Lectus aenean potenti leo sollicitudin tristique eros
+                quam ligula, vestibulum diam consequat enim torquent nec tempus, blandit viverra dapibus eleifend dis
+                nunc nascetur.
+
+            </p>
+            <h2 class="font-bold text-3xl font-black">Sodales hendrerit malesuada et vestibulum</h2>
+            <ul>
+                <li>Luctus euismod pretium nisi et, est dui enim.</li>
+                <li>Curae eget inceptos malesuada, fermentum class.</li>
+                <li>Porttitor vestibulum aliquam porta feugiat velit, potenti eu placerat.</li>
+                <li>Ligula lacus tempus ac porta, vel litora.</li>
+            </ul>
+            <P>Torquent non nisi lacinia faucibus nibh tortor taciti commodo porttitor, mus hendrerit id leo scelerisque
+                mollis habitasse orci tristique aptent, lacus at molestie cubilia facilisis porta accumsan condimentum.
+                Metus lacus suscipit porttitor integer facilisi torquent, nostra nulla platea at natoque varius
+                venenatis, id quam pharetra aliquam leo. Dictum orci himenaeos quam mi fusce lacinia maecenas ac magna
+                eleifend laoreet, vivamus enim curabitur ullamcorper est ultrices convallis suscipit nascetur. Ornare
+                fames pretium ante ac eget nisi tellus vivamus, convallis mauris sapien imperdiet sollicitudin aliquet
+                taciti quam, lacinia tempor primis magna iaculis at eu. Est facilisi proin risus eleifend orci torquent
+                ultricies platea, quisque nullam vel porttitor euismod sociis non, maecenas sociosqu interdum arcu sed
+                pharetra potenti. Aliquet risus tempus hendrerit sapien tellus eget cursus enim etiam dui, lobortis
+                nostra pellentesque odio posuere morbi ad neque senectus arcu eu, turpis proin ac felis purus fames
+                magnis dis dignissim.
+            </P>
+            <h2 class="font-bold text-3xl font-black">Elementum nisi urna cursus nisl quam ante tristique blandit
+                ultricies eget</h2>
+            <P>Torquent non nisi lacinia faucibus nibh tortor taciti commodo porttitor, mus hendrerit id leo scelerisque
+                mollis habitasse orci tristique aptent, lacus at molestie cubilia facilisis porta accumsan condimentum.
+                Metus lacus suscipit porttitor integer facilisi torquent, nostra nulla platea at natoque varius
+                venenatis, id quam pharetra aliquam leo. Dictum orci himenaeos quam mi fusce lacinia maecenas ac magna
+                eleifend laoreet, vivamus enim curabitur ullamcorper est ultrices convallis suscipit nascetur. Ornare
+                fames pretium ante ac eget nisi tellus vivamus, convallis mauris sapien imperdiet sollicitudin aliquet
+                taciti quam, lacinia tempor primis magna iaculis at eu. Est facilisi proin risus eleifend orci torquent
+                ultricies platea, quisque nullam vel porttitor euismod sociis non, maecenas sociosqu interdum arcu sed
+                pharetra potenti. Aliquet risus tempus hendrerit sapien tellus eget cursus enim etiam dui, lobortis
+                nostra pellentesque odio posuere morbi ad neque senectus arcu eu, turpis proin ac felis purus fames
+                magnis dis dignissim.
+
+            </P>
+            <P>Torquent non nisi lacinia faucibus nibh tortor taciti commodo porttitor, mus hendrerit id leo scelerisque
+                mollis habitasse orci tristique aptent, lacus at molestie cubilia facilisis porta accumsan condimentum.
+                Metus lacus suscipit porttitor integer facilisi torquent, nostra nulla platea at natoque varius
+                venenatis, id quam pharetra aliquam leo. Dictum orci himenaeos quam mi fusce lacinia maecenas ac magna
+                eleifend laoreet, vivamus enim curabitur ullamcorper est ultrices convallis suscipit nascetur. Ornare
+                fames pretium ante ac eget nisi tellus vivamus, convallis mauris sapien imperdiet sollicitudin aliquet
+                taciti quam, lacinia tempor primis magna iaculis at eu. Est facilisi proin risus eleifend orci torquent
+                ultricies platea, quisque nullam vel porttitor euismod sociis non, maecenas sociosqu interdum arcu sed
+                pharetra potenti. Aliquet risus tempus hendrerit sapien tellus eget cursus enim etiam dui, lobortis
+                nostra pellentesque odio posuere morbi ad neque senectus arcu eu, turpis proin ac felis purus fames
+                magnis dis dignissim.
+
+            </P>
+        </div>
+
+
+        <div class="mt-12 flex justify-center">
+            <a href="blog.html"
+                class="inline-flex items-center gap-2 bg-slate-100 text-slate-800 border border-slate-200 px-5 py-3 rounded-md font-semibold text-sm hover:bg-slate-200 transition-all">
+                ← Back to Blog
+            </a>
+        </div>
+
+    </main>
+    <footer class="my-10 ">
+        <div class="footer-content text-center">
+            <p class="text-center text-sm text-slate-500">Copyright © 2026 Astroship. All rights reserved.</p>
+            <p class="text-center text-xs text-slate-500 mt-1">Made by <a
+                    href="https://web3templates.com/">web3templates</a> • Distributed by <a
+                    href="https://themewagon.com/">ThemeWagon</a></p>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const icon = menuBtn.querySelector("i");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+
+            const isOpen = !mobileMenu.classList.contains("hidden");
+
+            menuBtn.setAttribute("aria-expanded", isOpen);
+            icon.classList.toggle("fa-bars", !isOpen);
+            icon.classList.toggle("fa-xmark", isOpen);
+        });
+
+        mobileMenu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+                menuBtn.setAttribute("aria-expanded", "false");
+                icon.classList.replace("fa-xmark", "fa-bars");
+            });
+        });
+    </script>
+</body>
+
+</html>
